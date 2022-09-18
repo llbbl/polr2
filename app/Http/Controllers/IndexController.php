@@ -10,6 +10,7 @@ class IndexController extends Controller {
      * @return Response
      */
     public function showIndexPage(Request $request) {
+
         if (env('POLR_SETUP_RAN') != true) {
             return redirect(route('setup'));
         }
